@@ -36,6 +36,6 @@ public class Gaulois {
 	 public static void main(String[] args) { 
 	 //TODO créer un main permettant de tester la classe Gaulois 
 	 } 
-	 
+	
 
 }

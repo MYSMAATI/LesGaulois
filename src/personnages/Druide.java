@@ -28,15 +28,18 @@ public class Druide {
 	 return "Le druide " + nom + " : "; 
 	 } 
 	 
-	 public int preparerPotion(int effetPotionMax) {
+	 public int preparerPotion(int effetPotionMin, int effetPotionMax) {
 		 Random random = new Random();
-		 int sortie;
-		 sortie = random.nextInt(effetPotionMax);
-		 return sortie;
+		 int potion;
+		 potion = random.nextInt((effetPotionMax - effetPotionMin));
+		 potion = potion + effetPotionMin;
+		 
+		 return potion;
 	 }
 	 
 	 public void main() {
 		 Druide panoramix = new Druide("Panoramix", 5, 10, 1);
+		 panoramix.effetPotion = Druide.preparerPotion()
 		 
 	 }
 }
