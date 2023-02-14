@@ -20,6 +20,14 @@ public class Druide {
 	 return nom; 
 	 } 
 	 
+	 public int getEffetPotionMin() {
+		 return effetPotionMin;
+	 }
+	 
+	 public int getEffetPotionMax() {
+		 return effetPotionMax;
+	 }
+	 
 	 public void parler(String texte) { 
 	 System.out.println(prendreParole() + "« " + texte + "»"); 
 	 } 
@@ -39,7 +47,7 @@ public class Druide {
 	 
 	 public void main() {
 		 Druide panoramix = new Druide("Panoramix", 5, 10, 1);
-		 panoramix.effetPotion = Druide.preparerPotion()
+		 panoramix.effetPotion = Druide.preparerPotion(panoramix.getEffetPotionMin(), panoramix.getEffetPotionMax());
 		 
 	 }
 }
