@@ -53,9 +53,9 @@ public class Druide {
 	 }
 	 
 	 public void booster(Gaulois gaulois) {
-		 if ((gaulois.getNom()).equals("Obélix le giga chad")) {
-			 parler("Non Obélix, le giga chad que tu es n'as pas besoin"
-			 		+ " de turbo potion magique");
+		 if ((gaulois.getNom()).equals("Obélix")) {
+			 parler("Non Obélix, tu n'as pas besoin"
+			 		+ " de potion magique");
 		 }
 		 else {
 			 gaulois.boirePotion(effetPotion);
